@@ -3,6 +3,7 @@ from src.spreddit import Spreddit
 # initialize Spreddit
 spr = Spreddit()
 
+# create a folder names 'pictures' where this is located
 # Initialize Reddit Account with API. This contains a login.
 # All mentioned params in brackets have to be filled.
 spr.initRedditAccount(user = '',
