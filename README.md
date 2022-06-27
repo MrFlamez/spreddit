@@ -30,7 +30,7 @@ A tool which can spread posts from reddit to other social media platforms. The o
 
 - python modules named in requirements.txt
   
-  ```pip -r requirements.txt```
+  ```pip install -r requirements.txt```
 
 - Reddit account with API access
 
