@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
-from instagram import Instagram, ProcessingError, InstagramLoginError
-from reddit import Reddit            
+from .instagram import Instagram, ProcessingError, InstagramLoginError
+from .reddit import Reddit            
 from PIL import Image
-from storage import Storage, Post
+from .storage import Storage, Post
 import sys
 import logging
 from logging.config import fileConfig
