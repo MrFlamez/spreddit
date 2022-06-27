@@ -43,5 +43,4 @@ class Reddit:
                     r = requests.get(element.url)
                     f.write(r.content)
                 posts.append(Post(element.name, element.title, element.author.name, int(element.created), filename))
-# "F:\Projects\spreddit\Pictures"
         return posts
