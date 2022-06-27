@@ -8,7 +8,7 @@ import requests
 import logging
 import io
 from PIL import Image
-from errors import ProcessingError, InstagramLoginError
+from .errors import ProcessingError, InstagramLoginError
 import random
 
 #TODO: Exceptions und Rückgabewerte definieren
