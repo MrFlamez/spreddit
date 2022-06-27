@@ -3,7 +3,7 @@
 import praw
 import requests
 import datetime
-from storage import Post
+from .storage import Post
 import logging
 
 class Reddit:
