@@ -1,4 +1,4 @@
-from spreddit import Spreddit, SMT_INSTAGRAM
+from src.spreddit import Spreddit
 
 # initialize Spreddit
 spr = Spreddit()
@@ -35,5 +35,5 @@ spr.initStorage()
 spr.saveNewPostsFromReddit(subReddit = '')
 
 # This is where the magic happens - SPREAD IT!
-spr.spreadPost(SMT_INSTAGRAM)
+spr.spreadPost(spr.spreadPost(spr.SMT_INSTAGRAM))
 
