@@ -6,7 +6,7 @@ import os
 import logging
 from PIL import Image
 import pickle
-from instagram import Instagram
+from .instagram import Instagram
 
 Post = namedtuple("Post", ['id', 'title', 'author', 'time', 'filename'])
 
