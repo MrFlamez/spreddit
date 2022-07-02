@@ -36,5 +36,5 @@ spr.initStorage()
 spr.saveNewPostsFromReddit(subReddit = '')
 
 # This is where the magic happens - SPREAD IT!
-spr.spreadPost(spr.spreadPost(spr.SMT_INSTAGRAM))
+spr.spreadPost(spr.SMT_INSTAGRAM)
 
