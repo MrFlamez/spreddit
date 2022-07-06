@@ -43,4 +43,4 @@ A tool which can spread posts from reddit to other social media platforms. The o
 
 ### Example
 
-An example can be find at example.py. It contains a step-by-step guide with comments.
+An example can be found at example.py. It contains a step-by-step guide with comments.
