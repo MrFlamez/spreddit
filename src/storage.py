@@ -6,7 +6,7 @@ import os
 import logging
 from PIL import Image
 import pickle
-from instagram import Instagram
+from .instagram import Instagram
 
 Post = namedtuple("Post", ['id', 'title', 'author', 'time', 'filename'])
 
@@ -27,12 +27,12 @@ class Storage:
 
         # load existing pickle dump or creat a new file
         if not os.path.isfile(cls.storageFilename):
-            storage = Storage()
+            storageFile = Storage()
         else:
             with open(cls.storageFilename, 'rb') as file:
-                storage = pickle.load(file)
+                storageFile = pickle.load(file)
 
-        return storage
+        return storageFile
 
     @classmethod
     def saveStorageObject(cls, obj):
