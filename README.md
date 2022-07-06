@@ -2,7 +2,7 @@
 
 ### Description
 
-A tool which can spread posts from reddit to other social media platforms. The one and only supported platform until now is instagram. Further platforms are planned.
+A tool which can spread posts from reddit to other social media platforms. The one and only supported platform until now is Instagram. Further platforms are planned.
 
 #### Details
 
