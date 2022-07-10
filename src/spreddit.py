@@ -1,11 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from .instagram import Instagram
-<<<<<<< HEAD
-from .errors import ProcessingError, InstagramLoginError 
-=======
 from .errors import ProcessingError, InstagramLoginError
->>>>>>> 73b917c4f1d4b0cac8f6f12a53f2ace291bf31b8
 from .reddit import Reddit            
 from PIL import Image
 from .storage import Storage, Post
