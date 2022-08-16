@@ -3,6 +3,7 @@
 from re import T
 from typing import BinaryIO
 from datetime import datetime
+from time import sleep
 import json
 import requests
 import logging
@@ -28,6 +29,8 @@ class Instagram:
                            Safari/537.36 \
                            Edg/97.0.1072.55"
         self.hashtags = ''
+        self.sleeptime_min = 30
+        self.sleeptime_max = 120
         self.logger = logging.getLogger(__name__)
 
     @classmethod
@@ -162,6 +165,7 @@ class Instagram:
 
         if 'status' in json_data:
             if json_data['status'] == 'ok':
+                sleep(random.randint(self.sleeptime_min, self.sleeptime_max))
                 return upload_id
 
         if 'type' in json_data['debug_info']:
@@ -217,6 +221,7 @@ class Instagram:
             response = {
                 "message": 'photo was shared successfully!',
                 'data': json_data}
+            sleep(random.randint(self.sleeptime_min, self.sleeptime_max))
             return response['message']
 
         if json_data['type'] == 'ProcessingFailedError':
@@ -263,7 +268,7 @@ class Instagram:
             response = {
                 "message": 'story was shared successfully!',
                 'data': json_data}
-
+            sleep(random.randint(self.sleeptime_min, self.sleeptime_max))
             return response
 
         raise Exception(json_data)
