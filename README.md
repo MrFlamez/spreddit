@@ -19,7 +19,7 @@ A tool which can spread posts from reddit to other social media platforms. The o
 - [x] save Image-Posts from Subreddit
 - [x] publishing on Instagram
 - [ ] publishing on Tumblr
-- [ ] delayed actions on instagram to avoid spam detection
+- [x] delayed actions on instagram to avoid spam detection
 - [ ] make save location on disk selectable
 
 ---
