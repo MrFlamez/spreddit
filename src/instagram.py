@@ -122,6 +122,7 @@ class Instagram:
                 "session_id": cookie_jar['sessionid']
             }
             self.logger.debug('authenticated')
+            sleep(random.randint(self.sleeptime_min, self.sleeptime_max))
             return self.session
 
         elif 'spam' in json_data:
